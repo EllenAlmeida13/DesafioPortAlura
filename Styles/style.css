@@ -1,0 +1,189 @@
+:root {
+    --cor-primaria: #27005D;
+    --cor-secundaria: #E4F1FF; 
+    --cor-terciaria: #9400FF;
+    --cor-hover: #AED2FF;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Altera o corpo todo da página*/
+body{
+    background-color: var(--cor-primaria);
+    /*height: 100vh;*/
+    /*width: 100vw;*/
+    box-sizing: border-box;
+    color: var(--cor-secundaria);
+}
+
+/*Alteração do menu de navegação*/
+
+.cabecalho{
+    padding: 5% 0 0 10%;
+}
+
+.nave-menu{
+    display: flex;
+    gap: 80px;
+}
+
+.nave-links{
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem; /*Se adapta a medida da tela*/
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+/*Altera todo o conteúdo da página*/
+.text-portfolio{
+    display: flex;
+    align-items: center; 
+    padding: 2% 10%;
+    gap: 82px;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-principal{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 50%;
+}
+
+
+/*Altera todo título h1*/
+h1{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 2.25rem;
+}
+
+/*Altera todo título h2 e h3*/
+h2{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 2.25rem;
+}
+
+h3{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+}
+
+/*Altera um pedaço do nosso texto destaque*/
+.text-destaque{
+    color: var(--cor-terciaria);
+}
+
+/*Altera nosso parágrafo*/
+.p-principal{
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+
+/*Altera todos os Links*/
+a{
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+}
+
+/*Altera a caixa inteira de links*/
+.caixa-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+/*Aqui altera link por link*/
+.links{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+/*Altera cursor*/
+.links:hover {
+    background-color: var(--cor-hover);
+    padding: 3%;
+}
+
+/*Aqui altera os icones*/
+a .icon{
+    width: 30px;
+    height: 30px;
+}
+
+/*Aqui altera somente a imagem principal do site*/
+.img-principal{
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    width: 50%;
+    /*height: 500px;*/
+}
+
+/*Alteração do rodapé da primeira página*/
+.rodape-p1{
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+/*Página Currículo*/
+
+.p-principal a{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+@media(max-width: 1200px){
+
+    .cabecalho{
+        padding: 6%;
+    }
+
+    .nave-menu{
+        justify-content: center;
+    }
+
+    .text-portfolio{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .box-principal{
+        width: auto;
+    }
+}
