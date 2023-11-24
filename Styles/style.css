@@ -413,10 +413,11 @@ a .icon{
     .rodape-p1 p {
         /*margin-bottom: 10px;*/
         font-size: 50%;
-        /*padding-right: 6%;*/
+        padding-right: 2%;
     }
 
     .rodape-p1 .logo{
         width: 40%;
+        padding-left: 2%;
     }
 }
