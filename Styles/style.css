@@ -192,15 +192,14 @@ a .icon{
 }
 
 /*Alteração das imagens do rodapé*/
-.rodape-p1 img, svg{
+.rodape-p1 .logo{
     width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.logo {
-    width: 100%; /* O SVG ocupa a largura total do contêiner */
-    height: auto; /* A altura é ajustada automaticamente para manter a proporção */
-    display: block; /* Para garantir o correto espaçamento ao redor do SVG */
-}
 
 /*Página Habilidades*/
 
@@ -376,6 +375,8 @@ a .icon{
 }
 
 @media (max-width: 768px) {
+
+    /*Modifica o menu de navegação*/
     .nave-menu {
         display: none;
     }
@@ -402,6 +403,8 @@ a .icon{
         transform: rotate(45deg) translate(-5px, -5px);
     }
 
+
+    /*Modifica o rodapé*/
     .rodape-p1{
         text-align: center;
         border: 100%;
@@ -420,4 +423,77 @@ a .icon{
         width: 40%;
         padding-left: 2%;
     }
+
+    .box-principal{
+        border: 10%;
+    }
+
+
+    /*Modifica o texto principal*/
+    .text-portfolio {
+        max-width: 100%;
+        padding: 50px;
+        box-sizing: border-box;
+    }
+
+    .box-principal {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .apresentacao__conteudo__titulo {
+        margin-top: 0;
+    }
+
+    .p-principal {
+        /*list-style: none;*/
+        padding: 0;
+        text-align: left;
+    }
+
+
+    /*Altera a imagem principal do site*/
+    .img-principal{
+        width: 80%;
+    }
+
+    /*Altera o formulário*/
+
+    #txt-contato form {
+        max-width: 100%; /* Use uma porcentagem para o máximo de largura do formulário */
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    
+    .titulo-form {
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    
+    button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: var(--cor-hover);
+        color: var(--cor-secundaria);
+        border: none;
+        cursor: pointer;
+    }
+
+
+
 }

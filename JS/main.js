@@ -6,7 +6,7 @@ formbutton("create", {
   title: "How can we help?",
   fields: [
     { 
-        type: "nome", 
+        type: "text", 
         label: "Nome:", 
         name: "name",
         required: true,
