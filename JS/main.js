@@ -1,6 +1,6 @@
-/* paste this line in verbatim */
+/*Altera o formulário*/
 window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-/* customize formbutton below*/     
+    
 formbutton("create", {
   action: "https://formspree.io/f/xdorrono",
   title: "How can we help?",
@@ -35,4 +35,10 @@ formbutton("create", {
       backgroundColor: "gray"
     }
   }
+});
+
+
+/*Altera a barra de navegação*/
+document.querySelector('.menu-toggle').addEventListener('click', function() {
+  document.querySelector('.nave-menu').classList.toggle('menu-open');
 });
