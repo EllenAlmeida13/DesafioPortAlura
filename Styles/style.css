@@ -404,12 +404,15 @@ a .icon{
 
     .rodape-p1{
         text-align: center;
+        padding: 5%;
+        
     }
 
     /* Estilos para o texto */
     .rodape-p1 p {
-        margin-bottom: 10px;
+        /*margin-bottom: 10px;*/
         font-size: 50%;
+        padding-right: 6%;
     }
 
     .rodape-p1 .logo{
