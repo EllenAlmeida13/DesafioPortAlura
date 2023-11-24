@@ -39,7 +39,7 @@ body{
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: var(--cor-terciaria);
     margin: 4px 0;
     transition: 0.4s;
 }
@@ -180,6 +180,7 @@ a .icon{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 0.5%;
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
@@ -187,11 +188,18 @@ a .icon{
     font-size: 1.5rem;
     text-align: center;
     font-weight: 400;
+    width: 100%; /* O rodapé ocupa a largura total */
 }
 
 /*Alteração das imagens do rodapé*/
 .rodape-p1 img, svg{
     width: 15%;
+}
+
+.logo {
+    width: 100%; /* O SVG ocupa a largura total do contêiner */
+    height: auto; /* A altura é ajustada automaticamente para manter a proporção */
+    display: block; /* Para garantir o correto espaçamento ao redor do SVG */
 }
 
 /*Página Habilidades*/
@@ -393,5 +401,18 @@ a .icon{
     .menu-open .bar:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -5px);
     }
-}
 
+    .rodape-p1{
+        text-align: center;
+    }
+
+    /* Estilos para o texto */
+    .rodape-p1 p {
+        margin-bottom: 10px;
+        font-size: 50%;
+    }
+
+    .rodape-p1 .logo{
+        width: 40%;
+    }
+}
