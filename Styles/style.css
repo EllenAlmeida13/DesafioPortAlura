@@ -486,7 +486,8 @@ a .icon{
     }
     
     button[type="submit"] {
-        width: 100%;
+        width: auto;
+        height: auto;
         padding: 10px;
         background-color: var(--cor-hover);
         color: var(--cor-secundaria);
