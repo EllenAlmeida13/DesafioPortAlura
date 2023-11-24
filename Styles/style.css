@@ -16,8 +16,6 @@
 /*Altera o corpo todo da página*/
 body{
     background-color: var(--cor-primaria);
-    /*height: 100vh;*/
-    /*width: 100vw;*/
     box-sizing: border-box;
     color: var(--cor-secundaria);
 }
@@ -166,15 +164,8 @@ a .icon{
     justify-content: flex-end;
     align-items: baseline;
     width: 40%;
-    /*height: 500px;*/
+    
 }
-
-/*Alteração do rodapé da primeira página*/
-/*.rodape {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
 
 .rodape-p1{
     display: flex;
@@ -210,44 +201,17 @@ a .icon{
 
 /*Formulário da página Contate-nos*/
 
-/*.formu{
-    position: relative;
-    left: 5%;
-    top: 80%;
-    width: 320px;
-    height: 270px;
-    color: var(--cor-secundaria);
-    font-size: 1.5rem;
-    font-family: var(--fonte-secundaria);
-    display: flex;
-    align-items: center; 
-    padding: 2% 10%;
-    gap: 82px;
-    justify-content: space-between;
-}*/
-
-/*.formu input{
-    color: var(--cor-secundaria);
-    font-size: 1.5rem;
-    font-family: var(--fonte-secundaria);
-}*/
-
 #txt-contato{
     margin-bottom: 2%;
 }
 
 /*Edita o título do formulário*/
 #txt-contato .titulo-form{
-    /*display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;*/
     margin-left: 2%;
     margin-bottom: 2%;
     padding-bottom: 7%;
     margin-top: 7%;
     font-size: 1.4rem;
-    /*font-size: 1.2rem;*/
 }
 
 /*Edita a caixa de formulário*/
@@ -255,7 +219,6 @@ a .icon{
     width:200%; 
     position: relative; 
     float: left; 
-    /*background-color: var(--cor-hover); */
     font-family: var(--fonte-secundaria);
     border: 2px solid var(--cor-terciaria);
     border-radius: 8px;
@@ -289,7 +252,6 @@ a .icon{
     padding: 10px 0;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
-    /*border: solid rgb(17, 2, 17) 1px; */
     padding-left: 1%;
     font-family: var(--fonte-secundaria);
 }
@@ -301,7 +263,6 @@ a .icon{
     margin-top: 10px;
     margin-bottom: 15px;
     margin-left: 2%;
-    /*border: solid rgb(17, 2, 17) 1px; */
     min-height: 100px;
     font-family: var(--fonte-secundaria);
     border: 2px solid var(--cor-terciaria);
@@ -316,20 +277,10 @@ a .icon{
 
 /*Botão do formulário*/
 #txt-contato form button {
-    /*width: 30%; 
-    height: auto; 
-    cursor: pointer; 
-    background-color: rgb(17, 2, 17);
-    color: #fff; 
-    font-size: 1.5em; 
-    padding: 15px 0 15px 0; 
-    margin-left: 35%; 
-    margin-top: 1%;*/
     font-family: var(--fonte-secundaria);
     display: flex;
     justify-content: center;
     text-align: center;
-    /*align-items: center;*/
     gap: 16px;
     border: 2px solid var(--cor-terciaria);
     width: 20%;
@@ -343,9 +294,6 @@ a .icon{
     cursor: pointer; 
     margin-left: 40%;
     margin-bottom: 2%;
-    /*text-decoration: none;
-    color: var(--cor-secundaria);
-    font-family: var(--fonte-secundaria);*/
 }
 
 #txt-contato form button:hover {
@@ -403,21 +351,12 @@ a .icon{
         transform: rotate(45deg) translate(-5px, -5px);
     }
 
+    /*Altera os links da página Index*/
     .caixa-links {
-        /*display: flex;
-        flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
-        /*justify-content: center; /* Centraliza os itens horizontalmente */
-        /*align-items: center; /* Alinha os itens verticalmente */
-        /*width: 100%;*/
-        /*padding: 15px 0;
-        align-items: center;
-        text-align: center;
-        justify-content: center;*/
         display: flex;
         width: 100%;
         max-width: 500px;
         padding: 10px;
-        /*margin: 100px;*/
     }
     
     .links {
@@ -434,7 +373,6 @@ a .icon{
         height: 20px; /* Ajuste a altura conforme necessário */
         width: auto;
         margin: auto;
-        /*padding: 100px;*/
     }
 
 
@@ -442,13 +380,11 @@ a .icon{
     .rodape-p1{
         text-align: center;
         border: 100%;
-        /*padding: 10%;*/
         
     }
 
     /* Estilos para o texto */
     .rodape-p1 p {
-        /*margin-bottom: 10px;*/
         font-size: 50%;
         padding-right: 2%;
     }
@@ -497,7 +433,6 @@ a .icon{
         max-width: 100%; /* Use uma porcentagem para o máximo de largura do formulário */
         margin: 0 auto;
         padding: 10px 5px 20px 5px;
-        /*box-sizing: border-box;*/
     }
     
     .titulo-form {
@@ -513,31 +448,18 @@ a .icon{
     input[type="text"],
     input[type="email"],
     textarea {
-        /*width: 100%;*/
         padding: 8px;
         margin-bottom: 10px;
         box-sizing: border-box;
         width: calc(100% - 16px);
     }
-    
+
+    /*Altera o botão do formulário*/
     .btn-form {
-        /*width: 100%;
-        max-width: 200px;
-        padding: 10px;
-        background-color: var(--cor-hover);
-        color: var(--cor-secundaria);
-        border: none;
-        cursor: pointer;
-        margin: 10px auto;
-        display: block;*/
         padding: 500px;
         display: flex;
         align-items: center;
         text-decoration: none;
-        /*margin: 10px;
-        padding-left: 30px;
-        padding-right: 30px;
-        border: 100px;*/
     }
 
 
