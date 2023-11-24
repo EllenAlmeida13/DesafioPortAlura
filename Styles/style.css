@@ -164,7 +164,6 @@ a .icon{
     justify-content: flex-end;
     align-items: baseline;
     width: 40%;
-    
 }
 
 .rodape-p1{
@@ -172,14 +171,14 @@ a .icon{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0.5%;
+    /*padding: 0.5%;*/
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
     text-align: center;
     font-weight: 400;
-    width: 100%; /* O rodapé ocupa a largura total */
+    width: 100vw; /* O rodapé ocupa a largura total */
 }
 
 /*Alteração das imagens do rodapé*/
