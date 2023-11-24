@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mim</title>
+    <title>Currículo</title>
     <link rel="stylesheet" href="./Styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap" rel="stylesheet">
 </head>
-
 <body>
+
     <header class="cabecalho"> <!--Cabeçalho-->
         <nav class="nave-menu">
             <a href="./index.html" class="nave-links">Home</a>
@@ -20,22 +19,48 @@
         </nav>
     </header>
 
-    <main class="text-portfolio"> <!--Conteúdo da página-->
-        <section class="box-principal">
-            <h1>Sobre <strong class="text-destaque">mim</strong></h1>
-            <br>
-            <p class="p-principal">
-                Sou uma pessoa muito extrovertida, atualmente faço Física na Universidade Federal de Uberlândia para encarar desafios, tenho muita dificuldade com matemática e áreas afins, o meu curso me ajuda a entender que eu posso ser quem eu quiser e chegar aonde quiser, apenas com esforço e determinação.
-            </p>
-            <br>
-            <p class="p-principal">
-                Além disso, sou uma pessoa extremamente curiosa e adoro ter o prazer de resolver problemas envolvendo design e tecnologia, faço de tudo e mais um pouco pelo aprendizado, mas meu objetivo é um só, criar soluções inovadoras que impactem positivamente a vida das pessoas e impulsionem o progresso na intersecção entre design e tecnologia.
-            </p>
-            <br>
+    <main class="text-portfolio">
+
+        <section id="txt-contato">
+
+
+            <form name="meu_form" id="meu_form" action="https://formspree.io/f/xdorrono" method="POST">
+
+                <h2 class="titulo-form">Entre em <strong class="text-destaque">contato</strong></h2>
+            
+                <label for="name">
+                    Nome: <br>
+                    <input type="name" name="name" placeholder="Digite seu Nome">
+                </label>
+
+                <br><br>
+
+                <label for="email">
+                    Email: <br>
+                    <input type="email" name="email" placeholder="Digite seu Email">
+                </label>
+
+                <br><br>
+
+                <label for="text">
+                    Fale Comigo: <br>
+                    <textarea type="text" name="message" placeholder="Deixe aqui sua mensagem.."></textarea>
+                </label>
+
+                <br>
+
+                <button type="submit" form="meu_form"> Enviar </button>
+            </form>
+
+        
         </section>
-        <img src="./imagens/Imagem.png" alt="" class="img-principal">
-    </main>
-    
+
+
+        <img src="./imagens/Imagem.png" alt="Foto da Joana Santos programando" class="img-principal">
+
+
+    </main> 
+
     <footer class="rodape-p1"> <!--Rodapé-->
         <svg width="125" height="66" viewBox="0 0 130 74" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_33_77)">
@@ -83,7 +108,7 @@
         <p>Desenvolvido por <strong>Ellen Almeida</strong> no programa Alura Include</p>
     </footer>
 
-    
+
 </body>
     <script src="./JS/main.js"></script>
 </html>

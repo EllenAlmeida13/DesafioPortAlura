@@ -16,6 +16,7 @@
 /*Altera o corpo todo da página*/
 body{
     background-color: var(--cor-primaria);
+    background-image: url("./imagens/");
     /*height: 100vh;*/
     /*width: 100vw;*/
     box-sizing: border-box;
@@ -25,7 +26,7 @@ body{
 /*Alteração do menu de navegação*/
 
 .cabecalho{
-    padding: 5% 0 0 10%;
+    padding: 5% 0 3% 10%;
 }
 
 .nave-menu{
@@ -60,6 +61,7 @@ main{
     flex-direction: column;
     gap: 16px;
     width: 50%;
+    text-align: justify;
 }
 
 
@@ -67,20 +69,21 @@ main{
 h1{
     color: var(--cor-secundaria);
     font-family: var(--fonte-primaria);
-    font-size: 2.25rem;
+    font-size: 2.05rem;
 }
 
 /*Altera todo título h2 e h3*/
 h2{
     color: var(--cor-secundaria);
     font-family: var(--fonte-primaria);
-    font-size: 2.25rem;
+    text-align: justify;
+    font-size: 1.4rem;
 }
 
 h3{
     color: var(--cor-secundaria);
     font-family: var(--fonte-primaria);
-    font-weight: 400;
+    font-weight: 300;
 }
 
 /*Altera um pedaço do nosso texto destaque*/
@@ -132,6 +135,7 @@ a{
 /*Altera cursor*/
 .links:hover {
     background-color: var(--cor-hover);
+    color: var(--cor-primaria);
     padding: 3%;
 }
 
@@ -146,13 +150,22 @@ a .icon{
     display: flex;
     justify-content: flex-end;
     align-items: baseline;
-    width: 50%;
+    width: 40%;
     /*height: 500px;*/
 }
 
 /*Alteração do rodapé da primeira página*/
+/*.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
 .rodape-p1{
-    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5%;
     color: var(--cor-primaria);
     background-color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
@@ -161,11 +174,162 @@ a .icon{
     font-weight: 400;
 }
 
-/*Página Currículo*/
+/*Alteração das imagens do rodapé*/
+.rodape-p1 img, svg{
+    width: 15%;
+}
+
+/*Página Habilidades*/
 
 .p-principal a{
     text-decoration: none;
     color: var(--cor-terciaria);
+}
+
+/*Formulário da página Contate-nos*/
+
+/*.formu{
+    position: relative;
+    left: 5%;
+    top: 80%;
+    width: 320px;
+    height: 270px;
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    align-items: center; 
+    padding: 2% 10%;
+    gap: 82px;
+    justify-content: space-between;
+}*/
+
+/*.formu input{
+    color: var(--cor-secundaria);
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}*/
+
+#txt-contato{
+    margin-bottom: 2%;
+}
+
+/*Edita o título do formulário*/
+#txt-contato .titulo-form{
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;*/
+    margin-left: 2%;
+    margin-bottom: 2%;
+    padding-bottom: 7%;
+    margin-top: 7%;
+    font-size: 1.4rem;
+    /*font-size: 1.2rem;*/
+}
+
+/*Edita a caixa de formulário*/
+#txt-contato form {
+    width:200%; 
+    position: relative; 
+    float: left; 
+    /*background-color: var(--cor-hover); */
+    font-family: var(--fonte-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    padding: 5%;
+    top: 5%; 
+    min-height: 400px;
+}
+
+/*Texto título do input*/
+#txt-contato form label {
+    font-weight: bold;
+    font-family: var(--fonte-secundaria);
+    margin-left: 2%;
+}
+
+/*Caixa de input*/
+#txt-contato form input {
+    max-width: 100%; 
+    width: 90%; 
+    height: 30px; 
+    margin-top: 10px;
+    margin-bottom: 15px; 
+    margin-left: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 0;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    /*border: solid rgb(17, 2, 17) 1px; */
+    padding-left: 1%;
+    font-family: var(--fonte-secundaria);
+}
+
+/*Caixa do Textarea*/
+#txt-contato form textarea {
+    max-width: 100%; 
+    width: 90%; 
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 2%;
+    /*border: solid rgb(17, 2, 17) 1px; */
+    min-height: 100px;
+    font-family: var(--fonte-secundaria);
+    border: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 10px 0;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    padding-left: 1%;
+}
+
+/*Botão do formulário*/
+#txt-contato form button {
+    /*width: 30%; 
+    height: auto; 
+    cursor: pointer; 
+    background-color: rgb(17, 2, 17);
+    color: #fff; 
+    font-size: 1.5em; 
+    padding: 15px 0 15px 0; 
+    margin-left: 35%; 
+    margin-top: 1%;*/
+    font-family: var(--fonte-secundaria);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /*align-items: center;*/
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 20%;
+    height: 10%;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    padding: 10px 0;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+    cursor: pointer; 
+    margin-left: 40%;
+    margin-bottom: 2%;
+    /*text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);*/
+}
+
+#txt-contato form button:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-primaria);
+    padding: 2.5%;
 }
 
 @media(max-width: 1200px){
