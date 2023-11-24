@@ -403,6 +403,40 @@ a .icon{
         transform: rotate(45deg) translate(-5px, -5px);
     }
 
+    .caixa-links {
+        /*display: flex;
+        flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+        /*justify-content: center; /* Centraliza os itens horizontalmente */
+        /*align-items: center; /* Alinha os itens verticalmente */
+        /*width: 100%;*/
+        /*padding: 15px 0;
+        align-items: center;
+        text-align: center;
+        justify-content: center;*/
+        display: flex;
+        width: 100%;
+        max-width: 500px;
+        padding: 10px;
+        /*margin: 100px;*/
+    }
+    
+    .links {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin: 10px;
+        padding-left: 22px;
+        padding-right: 23px;
+    }
+    
+    .icon {
+        margin-right: 5px;
+        height: 20px; /* Ajuste a altura conforme necessário */
+        width: auto;
+        margin: auto;
+        /*padding: 100px;*/
+    }
+
 
     /*Modifica o rodapé*/
     .rodape-p1{
@@ -462,8 +496,8 @@ a .icon{
     #txt-contato form {
         max-width: 100%; /* Use uma porcentagem para o máximo de largura do formulário */
         margin: 0 auto;
-        padding: 0 20px;
-        box-sizing: border-box;
+        padding: 10px 5px 20px 5px;
+        /*box-sizing: border-box;*/
     }
     
     .titulo-form {
@@ -479,20 +513,31 @@ a .icon{
     input[type="text"],
     input[type="email"],
     textarea {
-        width: 100%;
+        /*width: 100%;*/
         padding: 8px;
         margin-bottom: 10px;
         box-sizing: border-box;
+        width: calc(100% - 16px);
     }
     
-    button[type="submit"] {
-        width: auto;
-        height: auto;
+    .btn-form {
+        /*width: 100%;
+        max-width: 200px;
         padding: 10px;
         background-color: var(--cor-hover);
         color: var(--cor-secundaria);
         border: none;
         cursor: pointer;
+        margin: 10px auto;
+        display: block;*/
+        padding: 500px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        /*margin: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border: 100px;*/
     }
 
 
